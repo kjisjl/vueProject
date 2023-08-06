@@ -1,4 +1,4 @@
-import {getFloor, getProductList, getRank, postSearchProduct} from "@/api/product";
+import {getFloor, getLike, getProductList, getRank, postSearchProduct} from "@/api/product";
 
 export default {
     namespaced:true,
@@ -6,6 +6,7 @@ export default {
         productList:[],
         productFloor:[],
         productRank:[],
+        likeList:[],
         searchProductResult:{
             goodsList:[],
             trademarkList:[],
@@ -24,6 +25,9 @@ export default {
         },
         SET_SEARCH_PRODUCT(state,data){
             state.searchProductResult=data
+        },
+        SET_LIKE_LIST(state,data){
+            state.likeList=data
         }
     },
     actions:{
@@ -42,6 +46,10 @@ export default {
         async postSearchProductAsync({commit},body){
             const {data}=await postSearchProduct(body)
             commit('SET_SEARCH_PRODUCT',data)
+        },
+        async getLikeListAsync({commit},query){
+            const{data}=await getLike(query.pageNo,query.pageSize)
+            commit("SET_LIKE_LIST",data)
         }
     }
 

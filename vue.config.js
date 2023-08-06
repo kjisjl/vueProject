@@ -10,6 +10,11 @@ module.exports = defineConfig({
       '/api':{
         target:'http://sph-h5-api.atguigu.cn',
         changeOrigin:true
+      },
+      '/my':{
+        target: "http://jl.com:8082",
+        changeOrigin: true,
+        pathRewrite: {'^/my':''}
       }
     }
   },
