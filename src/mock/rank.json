@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "typeName":"热卖排行",
+    "productList": [
+      {
+        "id": 11,
+        "name": "农心（NONGSHIM）方便面经典多口味8连包 辛拉面辣白菜拉面多连包 8口味 经典八连包",
+        "imgUrl": "https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/112674/1/39503/144543/64af92b0Fdd48decc/b471ad6197a21ff1.jpg.avif",
+        "price": 28.8
+      },
+      {
+        "id": 12,
+        "name": "贝德美（bodcrme）儿童洗发水3-6-12-15岁无硅油弱酸性洗发露 柔顺控油 男女孩通用",
+        "imgUrl": "https://img14.360buyimg.com/babel/s300x300_jfs/t1/160880/39/36611/44719/6492c246F970bdc74/9be6ac6c16f9cd4d.jpg.avif",
+        "price": 45
+      },
+      {
+        "id": 13,
+        "name": "纪念币钱币收藏2011年熊猫评级银币CC29",
+        "imgUrl": "https://img12.360buyimg.com/n12/s350x350_jfs/t1/186558/10/33820/113757/64bf8fa8Ff6e885c3/fe0fd2e70a1e5ac1.jpg",
+        "price": 458
+      },
+      {
+        "id": 14,
+        "name": "华为（HUAWEI） 畅享20 5G通手机 闪拍6.6英寸 5000Mah电池 畅玩20 畅玩20【钛空银】 4GB+64GB",
+        "imgUrl": "https://img14.360buyimg.com/babel/s300x300_jfs/t1/173028/24/35273/189182/648d8fefF196d59d2/64c03d324bf92f1d.png.avif",
+        "price": 563
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "typeName":"特价排行",
+    "productList": [
+      {
+        "id": 21,
+        "name": "千柏山 云南正宗黑糖500g大姨妈经期产妇月子手工老红糖块纯甘蔗熬制 云南黑糖500g",
+        "imgUrl": "https://img11.360buyimg.com/seckillcms/s140x140_jfs/t1/117890/25/37901/164674/64aeabddF5db4d94d/949501067d0c385b.jpg.avif",
+        "price": 11.8
+      },
+      {
+        "id": 22,
+        "name": "迪士尼（Disney）洗脸巾一次性棉柔巾擦脸巾旅行旅游加大加厚洗面巾纸男女50抽/3包",
+        "imgUrl": "https://img13.360buyimg.com/n1/jfs/t1/118653/12/39430/98429/646f1a16F331eccd6/b801f583c9141857.jpg",
+        "price": 20.98
+      },
+      {
+        "id": 23,
+        "name": "【罗技pop keys无线蓝牙键鼠套装蓝牙茶轴机械键盘鼠标外接ipad笔记本电脑MAC办公游戏女生 梦幻紫",
+        "imgUrl": "https://img14.360buyimg.com/n1/jfs/t1/126813/3/20723/143175/61cbf340Eafd1b62e/f7518bab014733f6.jpg.avif",
+        "price": 100.98
+      },
+      {
+        "id": 24,
+        "name": "添晴24骨全自动雨伞黑胶双人男女晴雨两用伞加固折叠抗风遮阳伞太阳伞 24骨全自动黑色",
+        "imgUrl": "https://img11.360buyimg.com/n1/jfs/t1/104604/24/38920/81780/6419c3f5F5adad9c3/8d4db1f7033a545d.jpg.avif",
+        "price": 18.7
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "typeName":"新品排行",
+    "productList": [
+      {
+        "id": 31,
+        "name": "千丝板栗味馅饼整箱320g办公室点心休闲早餐糕点小零食品年货 板栗味馅饼320g【约8个】",
+        "imgUrl": "https://img12.360buyimg.com/seckillcms/s140x140_jfs/t1/108157/15/41592/119490/64c6303eF0bebfe72/10fed046bebf8946.jpg.avif",
+        "price": 6
+      },
+      {
+        "id": 32,
+        "name": "欧普京超薄LED吸顶灯简约现代圆形卧室灯饰遥控书房吸顶灯厨房餐厅灯具 亚黑 圆形28cm-24W【单白光】",
+        "imgUrl": "https://img11.360buyimg.com/jdcms/s300x300_jfs/t1/211727/22/34709/53842/64ada1d5F32d48eb7/86559a7a1dd697aa.jpg.avif",
+        "price": 58
+      },
+      {
+        "id": 33,
+        "name": "盯盯拍行车记录仪MINI3S 3K超清影像 超大存储拓展4G远程互联140°大广角",
+        "imgUrl": "https://img30.360buyimg.com/jdcms/s300x300_jfs/t1/205715/36/26864/72706/64c993d5F97c7a75d/d72d87b110ba3d76.jpg.avif",
+        "price": 339
+      },
+      {
+        "id": 34,
+        "name": "罗技（Logitech） K845机械键盘 有线游戏键盘 104键DIY键帽 发光电竞键盘吃鸡键盘 K845青轴【童年回忆正派】",
+        "imgUrl": "https://img10.360buyimg.com/jdcms/s300x300_jfs/t1/126740/22/35382/123185/64ca2509F15e55f60/556813dfd94b88b6.jpg.avif",
+        "price": 369
+      }
+    ]
+  }
+]
