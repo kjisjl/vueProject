@@ -84,7 +84,8 @@ export default defineComponent({
           query: {
             ["category" + level + "Id"]: id,
             categoryName: e.target.innerText.trim(),
-            keyword:this.$route.query.keyword
+            keyword:this.$route.query.keyword,
+            trademark:this.$route.query.trademark
           }
         })
         this.isShow = false;

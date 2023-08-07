@@ -7,7 +7,10 @@ export default defineComponent({
   name: "Search",
   components: {SearchSelector},
   computed: {
-    ...mapState('product', ['searchProductResult'])
+    ...mapState('product', ['searchProductResult']),
+    isShow() {
+      return Object.values(this.$route.query).filter(v => v).length
+    }
   },
   watch: {
     "$route.query": {
@@ -39,6 +42,15 @@ export default defineComponent({
         query
       });
       this.$bus.$emit('clearKeyword')
+    },
+    deleteTrademark() {
+      //不能直接赋值，要用到拷贝
+      const query = {...this.$route.query}
+      delete query.trademark
+      this.$router.push({
+        path: '/search',
+        query
+      })
     }
   },
 })
@@ -54,16 +66,22 @@ export default defineComponent({
 
       <div class="py-container">
         <!--bread-->
-        <div class="bread">
+        <div class="bread" v-show="isShow>0">
           <ul class="fl sui-breadcrumb">
             <li>
               <a href="#">全部结果</a>
             </li>
           </ul>
           <ul class="fl sui-tag">
+            <!-- 品牌标签-->
+            <li class="with-x" v-if="$route.query.trademark">{{ $route.query.trademark.split(":")[1] }}
+              <i @click="deleteTrademark">×</i>
+            </li>
+            <!--三级导航里的标签-->
             <li class="with-x" v-if="$route.query.categoryName">{{ $route.query.categoryName }}
               <i @click="deleteCategoryName">×</i>
             </li>
+            <!--关键字标签-->
             <li class="with-x" v-if="$route.query.keyword">{{ $route.query.keyword }}
               <i @click="deleteKeyWord">×</i>
             </li>

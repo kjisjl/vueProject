@@ -4,18 +4,19 @@ import {mapState} from "vuex";
 
 export default defineComponent({
   name: "SearchSelector",
-  computed:{
-    ...mapState('product',{
+  computed: {
+    ...mapState('product', {
 
       //品牌信息表
-      trademarkList(state){
+      trademarkList(state) {
         //把trademarkList的空属性给过滤掉
-        return state.searchProductResult.trademarkList.filter(item=>item.tmName)
+        return state.searchProductResult.trademarkList.filter(item => item.tmName)
       },
-      attrsList(state){
+      attrsList(state) {
         return state.searchProductResult.attrsList
       }
-    })
+    }),
+
   }
 })
 </script>
@@ -26,16 +27,24 @@ export default defineComponent({
       <div class="fl key brand">品牌</div>
       <div class="value logos">
         <ul class="logo-list">
-          <li v-for="item in trademarkList" :key="item.tmId">{{item.tmName}}</li>
+          <li v-for="item in trademarkList" :key="item.tmId"
+              @click="$router.push({
+                path:'/search',
+                query:{
+                  ...$route.query,
+                  trademark:item.tmId+':'+item.tmName
+                }
+          })">{{ item.tmName }}
+          </li>
         </ul>
       </div>
     </div>
-    <div class="type-wrap"  v-for="item in attrsList" :key="item.attrId">
-      <div class="fl key">{{item.attrName}}</div>
+    <div class="type-wrap" v-for="item in attrsList" :key="item.attrId">
+      <div class="fl key">{{ item.attrName }}</div>
       <div class="fl value">
         <ul class="type-list">
           <li v-for="(info,index) in item.attrValueList" :key="index">
-            <a>{{info}}</a>
+            <a>{{ info }}</a>
           </li>
         </ul>
       </div>
